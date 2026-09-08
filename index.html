@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff8ed">
+  <meta name="description" content="A traditional South Indian wedding e-invitation">
+  <title>Wedding Invitation | Arun & Priya</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Noto+Serif+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Opening screen -->
+  <div class="opening" id="opening">
+    <div class="opening-lotus">✿</div>
+    <p class="opening-small">॥ ஸ்ரீ கணேஷாய நமः ॥</p>
+    <h1>Wedding Invitation</h1>
+    <p class="opening-sub">With the blessings of our families</p>
+    <button class="open-btn" id="openBtn">Open Invitation <span>✦</span></button>
+    <p class="tap-hint">Tap to enter</p>
+  </div>
+
+  <!-- Ambient effects -->
+  <div class="petals" id="petals"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <!-- Music button -->
+  <button class="music-btn" id="musicBtn" aria-label="Toggle music">♫</button>
+  <audio id="bgMusic" loop preload="none">
+    <!-- Put your own music file at assets/wedding.mp3 -->
+    <source src="assets/wedding.mp3" type="audio/mpeg">
+  </audio>
+
+  <main id="page">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="mantra">॥ மங்களம் ॥</p>
+        <p class="invite-line">With the divine blessings of our parents</p>
+
+        <h1 class="names">
+          <span>Ramachandran G</span>
+          <b>&</b>
+          <span>Monalisa B</span>
+        </h1>
+
+        <p class="together">are getting married</p>
+
+        <div class="date-box">
+          <span>20</span>
+          <i>•</i>
+          <span>DECEMBER</span>
+          <i>•</i>
+          <span>2026</span>
+        </div>
+
+        <p class="scroll-text">Scroll to explore</p>
+        <div class="scroll-arrow">⌄</div>
+      </div>
+    </section>
+
+    <!-- INVITATION -->
+    <section class="section invitation reveal">
+      <div class="ornament">❈</div>
+      <p class="eyebrow">YOU ARE CORDIALLY INVITED</p>
+      <h2>Two Hearts, One Journey</h2>
+      <p class="body-text">
+        Together with our families, we joyfully invite you to be part of
+        our special day as we begin a beautiful new chapter of our lives.
+        Your presence and blessings will make our celebration truly complete.
+      </p>
+      <div class="flower-line">✿　❈　✿</div>
+    </section>
+
+    <!-- COUPLE -->
+    <section class="section couple reveal">
+      <p class="eyebrow">THE COUPLE</p>
+      <h2>With Love</h2>
+
+      <div class="couple-grid">
+        <article class="person-card">
+          <div class="avatar">A</div>
+          <h3>Ramachandran G</h3>
+          <p>Beloved Son of<br>Mr. & Mrs Gopi & Devaki</p>
+        </article>
+
+        <div class="ampersand">♥</div>
+
+        <article class="person-card">
+          <div class="avatar">P</div>
+          <h3>Monalisa B</h3>
+          <p>Beloved Daughter of<br>Mr. & Mrs Balaraman & Umavathi</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section events reveal">
+      <p class="eyebrow">SAVE THE DATE</p>
+      <h2>Wedding Celebrations</h2>
+
+      <div class="event-card">
+        <div class="event-icon">❈</div>
+        <div>
+          <p class="event-type">ENGAGEMENT</p>
+          <h3>Engagement Ceremony</h3>
+          <p>13 September 2026 · 10:00 AM</p>
+          <p class="muted">Velachery, Chennai</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">ॐ</div>
+        <div>
+          <p class="event-type">MUHURTHAM</p>
+          <h3>Wedding Ceremony</h3>
+          <p>20 December 2026 · 6:00 AM</p>
+          <p class="muted">Sri Lakshmi Mahal, Chennai</p>
+        </div>
+      </div>
+
+      <div class="event-card">
+        <div class="event-icon">✦</div>
+        <div>
+          <p class="event-type">RECEPTION</p>
+          <h3>Wedding Reception</h3>
+          <p>20 December 2026 · 6:30 PM</p>
+          <p class="muted">Sri Lakshmi Mahal, Chennai</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="countdown-section reveal">
+      <div class="countdown-inner">
+        <p class="eyebrow">COUNTING THE MOMENTS</p>
+        <h2>Until We Say “I Do”</h2>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VENUE -->
+    <section class="section venue reveal">
+      <p class="eyebrow">WHERE WE CELEBRATE</p>
+      <h2>The Venue</h2>
+      <div class="venue-card">
+        <div class="temple-mark">ॐ</div>
+        <h3>Sri Lakshmi Mahal</h3>
+        <p>123 Wedding Street<br>Chennai, Tamil Nadu</p>
+        <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=Sri+Lakshmi+Mahal+Chennai" target="_blank" rel="noopener">
+          📍 Get Directions
+        </a>
+      </div>
+    </section>
+
+    <!-- RSVP -->
+    <section class="section rsvp reveal">
+      <p class="eyebrow">YOUR PRESENCE IS OUR GIFT</p>
+      <h2>Will You Join Us?</h2>
+      <p class="body-text">
+        We would be delighted to celebrate this memorable occasion with you.
+      </p>
+
+      <div class="rsvp-buttons">
+        <a class="rsvp-btn" href="https://wa.me/+919150751177?text=Congratulations%20Ramachandran%20%26%20Monalisa!%20I%20will%20be%20joining%20your%20wedding." target="_blank" rel="noopener">✓ Yes, I'll Join</a>
+        <a class="rsvp-btn secondary" href="https://wa.me/919551555093?text=Congratulations%20Ramachandran%20%26%20Monalisa!%20Thank%20you%20for%20the%20invitation." target="_blank" rel="noopener">♡ Send Wishes</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer reveal">
+      <div class="footer-ornament">✿ ❈ ✿</div>
+      <p>With love, laughter & happily ever after</p>
+      <h2>Ramachandran & Monalisa</h2>
+      <p class="copyright">20 • 12 • 2026</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
